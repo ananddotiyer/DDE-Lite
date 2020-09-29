@@ -7,4 +7,4 @@ At the heart of the program is the concept of a data template, that, simply put,
 
 The rules could vary in complexity and can handle simple data validation (as seen in Excel) rules, to very complicated user-defined functions (as defined from Python).  It also supports the cross-references between excel cells, INDIRECT references (as supported in Excel), and has built-in concatenation methods, both of which are available out-of-the-box. 
 
-For more insights into workflow, usage instructions, and prerequisites of the tool, see <a href='https://github.com/ananddotiyer/DDE/blob/master/Help/readme.mht'>Help documentation</a>
+For more insights into workflow, usage instructions, and prerequisites of the tool, see <a href='https://github.com/ananddotiyer/DDE-Lite/blob/master/Help/readme.pdf'>Help documentation</a>
