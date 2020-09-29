@@ -1,0 +1,25 @@
+#Demonstrates pattern-based creation of positive and negative data.
+
+#headers
+R0C1|Header1|1|Name
+
+R0C2|Header2|1|Company
+
+R0C3|Header3|1|Domain
+
+R0C4|Header4|1|Email
+
+R0C5|Header5|1|Password
+
+#values
+R1C1|Name|1|(FAKE:name,en_US)
+
+R1C2|Company|1|(FAKE:company,en_US)
+
+R1C3|Domain|1|(STR_REPLACE:/[-_, ]/,//,C2) #Replace regex by nothing.
+
+R1C4|Email|1|(XEGER:[a-z]{3}\.[a-z]{4}) #Generate email, except domain, using xegr pattern.
+
+R1C4|EmailDomain|1|(STR_CONCAT:C4,@,C3,.com) #Concatenate email generated above with company.
+
+R1C5|Password|1|(XEGER:/[a-z]{3}[!@#$%][a-z]{3}\d/)

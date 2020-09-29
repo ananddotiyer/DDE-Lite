@@ -1,0 +1,23 @@
+#Demonstrates variable storage and iteration using next function.
+
+#headers
+
+R0C1|Header1|1|Map
+
+R0C2|Header2|1|Filename
+
+R0C3|Header3|1|FilenameWithLinks
+
+#values
+
+$store|Map|1|(LIST:One,Two,Three,Four,Five)
+
+R1C1|Number|1|(NEXT:$store)
+
+$files|Filename|1|(LIST_FILES:/C:\Python27/)
+
+R1C2|Number|1|(NEXT:$files)
+
+$music|Filename|1|(LIST_FILES_WITH_LINKS:/D:\Music/)
+
+R1C3|Number|1|(NEXT:$music)

@@ -1,0 +1,21 @@
+#Demonstrates functions from python's math module.
+
+#Headers
+R0C1|Number|1|Signed number
+
+R0C2|Absolute|1|Absolute
+
+R0C3|Square|1|Square
+
+R0C4|Factorial|1|Factorial
+
+#Values
+$serial|Number|1|(EVAL_IN_PYTHON:range (-5,5))
+
+R1C1|Number|1|(NEXT:$serial)
+
+R1C2|Absolute|1|(EVAL_IN_PYTHON:math.fabs(C1))
+
+R1C3|Square|1|(EVAL_IN_PYTHON:math.pow(C1,2))
+
+R1C4|Factorial|1|(EVAL_IN_PYTHON:math.factorial(C2))

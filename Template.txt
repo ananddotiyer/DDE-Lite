@@ -1,0 +1,43 @@
+#Demonstrates misc functions.
+
+#headers
+R0C1|Header1|1|Name_choice
+
+R0C2|Header2|1|Place_choice
+
+R0C3|Header3|1|Fake_first_name
+
+R0C4|Header4|1|Fake_last_name
+
+R0C5|Header5|1|Fake_name
+
+R0C6|Header6|1|Fake_company
+
+R0C7|Header7|1|Concat_email
+
+R0C8|Header8|1|DependentOnPlace
+
+R0C9|Header9|1|Concat_name_company
+
+R0C10|Header10|1|Hello_first_name
+
+#values
+R1C1|Name|1|(CHOICE:Anand,Sudha,Aravind,Nitesh,Sadhna)
+
+R1C2|Indirect|1|(CHOICE:Mars,Pluto,Earth)
+
+R1C3|Name|1|(FAKE:first_name)
+
+R1C4|Name|1|(FAKE:last_name)
+
+R1C5|Name|1|(FAKE:name)
+
+R1C6|Company|1|(FAKE:company)
+
+R1C7|Email|1|(STR_CONCAT:C3,.,C4,@,C6,.com)
+
+R1C8|Message|1|(INDIRECT:C2,/{'Mars':['Phobos ','Deimos'],'Pluto':['Nix','Hydra','Kerberos','Styx'],'Earth':['Moon','ERS-1','ERS-2']}/)
+
+R1C9|Name_Company|1|(STR_CONCAT:C3,: ,C6)
+
+R1C10|SayHello|1|(SAYHELLO:C3)

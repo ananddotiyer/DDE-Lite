@@ -1,0 +1,24 @@
+#Demonstrates indirect choice functionality.
+
+#headers
+R0C1|Header1|1|General
+
+R0C2|Header2|1|Brand
+
+R0C3|Header3|1|Brand-ext
+
+R0C4|Header4|1|Another
+
+R0C5|Header5|1|DependentOnBrand
+
+#values
+
+R1C1|General|1|(CHOICE:1,2,3,4,5)
+
+R1C2|Brand|1|(CHOICE:Hello,/Hello world/)
+
+R1C3|Brand-ext|1|(SAYHELLO:C2)
+
+R1C4|Another|1|(SAYHELLO:C3)
+
+R1C5|DependentOnBrand|1|(INDIRECT:C2,/{'Hello':['1','2','3','4','5'],'Hello world':['6','7','8','9','10']}/)

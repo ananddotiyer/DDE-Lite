@@ -1,0 +1,15 @@
+#Demonstrates backward references.
+
+#headers
+R0C1|Header1|1|Name
+
+R0C2|Header2|1|DependentOnBase
+
+R0C3|Header3|1|Base
+
+#values
+R1C1|Name|1|(CHOICE:Anand,Sudha,Aravind)
+
+R1C2|Message|1|(INDIRECT:C3,/{'World':['hello World','hi World'],'Globe':['hello Globe','hi Globe'],'Earth':['hello Earth','hi Earth']}/)
+
+R1C3|Indirect|1|(CHOICE:World,Globe,Earth)

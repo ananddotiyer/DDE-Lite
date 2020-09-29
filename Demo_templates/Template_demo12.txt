@@ -1,0 +1,23 @@
+#Get item names/prices from given amazon search result page.
+
+#Headers
+R0C1|Title|1|Item
+
+R0C2|Title|1|Maker
+
+R0C3|Title|1|Price
+
+#Values
+$items|General|1|(EXTRACT_AMAZON:http://www.amazon.in/s/&page=3&keywords=laptop)
+
+$title|Title|1|(LIST_FROM_DICT:$items,title)
+
+R1C1|Title|1|(NEXT:$title)
+
+$maker|Maker|1|(LIST_FROM_DICT:$items,maker)
+
+R1C2|Maker|1|(NEXT:$maker)
+
+$price|Price|1|(LIST_FROM_DICT:$items,price)
+
+R1C3|Price|1|(NEXT:$price)

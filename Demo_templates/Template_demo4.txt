@@ -1,0 +1,23 @@
+#Demonstrates generation of fake data
+
+#headers
+R0C1|Header1|1|Name
+
+R0C2|Header2|1|Address
+
+R0C3|Header3|1|City
+
+R0C4|Header4|1|Company
+
+R0C5|Header5|1|Email
+
+#values
+R1C1|Name|1|(FAKE:name,en_US)
+
+R1C2|Address|1|(FAKE:address,en_US)
+
+R1C3|City|1|(FAKE:city,en_US)
+
+R1C4|Company|1|(FAKE:company,en_US)
+
+R1C5|Email|1|(FAKE:company_email,en_US)

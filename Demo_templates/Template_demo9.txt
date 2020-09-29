@@ -1,0 +1,24 @@
+#Demonstrates using an API - similar Youtube videos.
+
+#headers
+R0C1|Header1|1|Sl.No
+
+R0C2|Header1|1|Title
+
+R0C3|Header2|1|Description
+
+#values
+
+$serial|Serial|1|(EVAL_IN_PYTHON:range (1,1001))
+
+R1C1|Title|1|(NEXT:$serial)
+
+$video|Search|1|(VIDEO_SIMILAR:cm-cSW66Isc)
+
+$title|Title|1|(LIST_FROM_DICT:$video,Title)
+
+R1C2|Title|1|(NEXT:$title)
+
+$desc|Description|1|(LIST_FROM_DICT:$video,Description)
+
+R1C3|Description|1|(NEXT:$desc)

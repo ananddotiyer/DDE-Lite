@@ -1,0 +1,12 @@
+#Get all URLs within given article
+#Cannot run two extracts from within one template, so comment one of these out
+
+#Header
+#$store|Title|1|(LIST_EXTRACT_HTML:http://sdtimes.com/whats-store-next-generation-internet-things/,h1[@class='page-header']/text())
+
+#R0C1|Title|1|(NEXT:$store)
+
+#Values
+$store|General|1|(LIST_LINKS_HTML:http://sdtimes.com/whats-store-next-generation-internet-things/)
+
+R1C1|Link|1|(NEXT:$store)
