@@ -1,5 +1,5 @@
 # DDE-Lite
-Mini version of DDE tool.  Executed from python environment, instead of C# .NET.  The original version is available at https://github.com/ananddotiyer/DDE.  
+Mini version of DDE tool.  Executed from python environment.  The original version is available at https://github.com/ananddotiyer/DDE.  
 
 DDE-Lite (Data Drive Engine) is a set of python scripts that helps extend typical Excel functionalities, like its formulae and macros.  On top of that, the tool allows to create massive amounts of data that follows a specified template, characterized by a set of rules.  This will greatly enhance the effectiveness of testing, specifically automated and performance testing.
 
